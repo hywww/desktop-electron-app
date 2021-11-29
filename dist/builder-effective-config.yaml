@@ -1,0 +1,28 @@
+directories:
+  output: dist
+  buildResources: build
+productName: CDE网页抓取工具
+appId: com.electron.cde
+asar: false
+dmg:
+  sign: false
+mac:
+  icon: icons/cde.icns
+  target: default
+win:
+  icon: icons/cde.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  installerIcon: icons/cde.ico
+  uninstallerIcon: icons/cde.ico
+  installerHeaderIcon: icons/cde.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: CDE网页抓取工具
+electronVersion: 12.0.1
